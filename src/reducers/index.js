@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
 import {createResponsiveStateReducer} from 'redux-responsive';
 
-import { breakpoints } from '../assets/data/variables.json';
+import { breakpoints } from '../styles/variables.json';
+
+import exampleReducer from './example_reducer';
 
 // custom breakpoints for redux-responsive store
 const browser = createResponsiveStateReducer({
@@ -12,6 +14,7 @@ const browser = createResponsiveStateReducer({
 });
 
 const rootReducer = combineReducers({
+  exampleReducer,
   browser
 });
 

@@ -2,9 +2,9 @@ import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
-class App extends Component {
+import ExampleFunctionalComponent from '../components/ExampleFunctionalComponent';
 
-  static propTypes = {};
+class App extends Component {
 
   constructor(props) {
     super(props);
@@ -33,7 +33,13 @@ class App extends Component {
   render() {
 
     return (
-      <div></div>
+      <div className='container full-height'>
+        <div className='row u-full-width full-height'>
+          <ExampleFunctionalComponent onClick={this.props.exampleAction}>
+            <h3 style={{textAlign: 'center'}}>Hello World!</h3>
+          </ExampleFunctionalComponent>
+        </div>
+      </div>
     );
   }
 }

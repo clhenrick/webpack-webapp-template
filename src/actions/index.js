@@ -1,6 +1,6 @@
 export const EXAMPLE_ACTION = 'EXAMPLE_ACTION';
 
-export const action = (example) => ({
+export const exampleAction = (example) => ({
   type: EXAMPLE_ACTION,
   example
 });
