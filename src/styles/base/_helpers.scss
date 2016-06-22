@@ -4,15 +4,18 @@
 
 .hidden { visibility: hidden; }
 
-.center { text-align: center; }
+.full-height {
+  height: 100%;
+}
 
+.center { text-align: center; }
 .caps { text-transform: uppercase; }
 .light { font-family: $font-stack-light; }
 .orange { color: $color-orange; }
 
 .mobile {
   display: none;
-  
+
   @include respond-to('small') {
     display: block;
   }
@@ -20,7 +23,7 @@
 
 .desktop-tall {
     display: none;
-  
+
   @include respond-to('tall') {
     display: block;
   }
