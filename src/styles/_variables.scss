@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// fonts
+$font-stack-main: 'rooneysans_regular', 'Arial', sans-serif !default;
+$font-stack-bold: 'rooneysansbold', 'Arial', sans-serif !default;
+$font-stack-light: 'rooneysanslight', 'Arial', sans-serif !default;
+
+// font-sizes
+// to do: make these em's or rem's
+$fs7: 7px !default;
+$fs8: 8px !default;
+$fs10: 10px !default;
+$fs12: 12px !default;
+$fs14: 14px !default;
+$fs16: 16px !default;
+$fs18: 18px !default;
+$fs20: 20px !default;
+$fs25: 25px !default;
+$fs32: 32px !default;
+
+// colors
+$color-base: #dfe2e5 !default;
+$color-white: #FFF !default;
+$color-grey-med: #666 !default;
+$color-grey-dark: #333 !default;
+$color-green: #20c127 !default;
+$color-orange: #ec6043 !default;
+
+// padding & margins
+$p5: 5px !default;
+$p10: 10px !default;
+$p15: 15px !default;
+$m5: 5px !default;
+$m10: 10px !default;
+$m15: 15px !default;
+
+// border radius
+$border-radius: 10px !default;
+
+// btn
+$btn-height: 35px !default;
+$btn-border-radius: 5px !default;
+$btn-font-size: $fs16 !default;
+$btn-line-height: $fs32 !default;
+$btn-letter-spacing: 1px !default;
+
+// heights
+$height-header: 60px !default;
+$height-header-medium: 45px !default;
+$height-footer: 40px !default;
+$height-panel: calc(100vh - #{$height-header} - 15px) !default;
+$height-panel-top: 85px !default;
+
+// widths
+$width-header: 100% !default;
+$width-footer: 100% !default;
+$width-panel-left: 254px !default;
+$width-panel-right: calc( 100% - #{$width-panel-left} - #{$m5} ) !default;
+
+// z-indexes
+$depth-1: 1 !default;
+$depth-2: 2 !default;
+$depth-3: 3 !default;
+$depth-4: 4 !default;
+$depth-5: 5 !default;
+$depth-10: 10 !default;
+$depth-100: 100 !default;
+$depth-insane: 99999999 !default;
+
+// break points
+$breakpoint-medium: 1024px !default;
+$breakpoint-small: 767px !default;
+$breakpoint-tall: 750px !default;
+$breakpoint-short: 700px !default;
+
+$breakpoints: (
+  'medium': (max-width: $breakpoint-medium),
+  'small': (max-width: $breakpoint-small),
+  'tall': (min-height: $breakpoint-tall),
+  'short': (max-height: $breakpoint-short)
+);

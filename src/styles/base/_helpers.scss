@@ -1,0 +1,37 @@
+.hide-if-loading { display: show; }
+.loading .hide-if-loading { display: none; }
+.loading .hide-while-loading { display: none; }
+
+.hidden { visibility: hidden; }
+
+.center { text-align: center; }
+
+.caps { text-transform: uppercase; }
+.light { font-family: $font-stack-light; }
+.orange { color: $color-orange; }
+
+.mobile {
+  display: none;
+  
+  @include respond-to('small') {
+    display: block;
+  }
+}
+
+.desktop-tall {
+    display: none;
+  
+  @include respond-to('tall') {
+    display: block;
+  }
+}
+
+.desktop-tall-hide {
+  @include respond-to('tall') {
+    display: none;
+  }
+}
+
+.close a, .close {
+  font-size: $fs18;
+}

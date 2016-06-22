@@ -1,0 +1,36 @@
+html, body, #app {height: 100%;}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: $btn-font-size;
+  font-weight: bold;
+  color: $color-white;
+  line-height: $btn-line-height;
+  letter-spacing: $btn-letter-spacing;
+  border-radius: $btn-border-radius;
+  height: $btn-height;
+}
+
+// ruled line
+.rule {
+  border-top: 2px solid #666;
+  margin: 10px;
+
+  @include respond-to('small') {
+    margin: 10px 0;
+  }
+}
+
+@include respond-to('medium') {
+  // media query to medium size
+}
